@@ -80,7 +80,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Sidebar Name"
+  name             : "Bio"
   avatar           : "profile.png"
   bio              : "Automotive security engineer & researcher"
   location         : "Germany"
