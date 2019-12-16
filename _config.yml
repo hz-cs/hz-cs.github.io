@@ -85,10 +85,10 @@ author:
   bio              : "Automotive security engineer & researcher"
   location         : "Germany"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=eyECTPelLvQC&hl=en&oi=sra"
   email            :
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  researchgate     : "https://www.researchgate.net/scientific-contributions/2122301547_Heng_Zhang"
   uri              :
   bitbucket        :
   codepen          :
