@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Pages template for academic personal websites"
+title: "Welcome to my personal website"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
