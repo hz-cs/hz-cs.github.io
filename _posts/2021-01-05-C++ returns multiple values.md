@@ -294,6 +294,50 @@ The greater number is 8 and the smaller number is 5
 
 
 
+While C++ does not have an official way to return multiple values from a function, one can make use of the std::pair, std::tuple, or a local struct to return multiple values.
+
+However, with the introduction of structured binding in C++17, the process is greatly simplified as the output parameters no longer need to be initialized.
+
+Code
+
+The following code snippet shows the way to return multiple values from a function using a local structure:
+
+#include <iostream>
+using namespace std;
+
+auto foo() {
+  struct retVals {        // Declare a local structure 
+    int i1, i2;
+    string str;
+  };
+  return retVals {10, 20, "Hi"}; // Return the local structure
+}
+
+int main() {
+  auto [value1, value2, value3] = foo(); // structured binding declaration
+  cout << value1 << ", " << value2 << ", " << value3 << endl;
+}
+
+Note the structured binding syntax on line 131313; there is no need to instantiate output values before calling the function. The datatypes are determined automatically.
+
+The std::tuple can also be used to return multiple values in conjunction with structured binding. This is shown below:
+
+#include <iostream>
+#include <tuple>
+
+using namespace std;
+
+tuple<int, float, string> foo()
+{
+  return {128, 3.142, "Hello"};
+}
+
+int main()
+{
+  auto [value1, value2, value3] = foo();
+  cout << value1 << ", " << value2 << ", " << value3 << endl;
+}
+
 
 
 
