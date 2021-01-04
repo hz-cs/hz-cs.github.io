@@ -12,4 +12,4 @@ Future work.
 
 [Download paper here](http://scholar.google.com/files/paper1.pdf)
 
-Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
+Recommended citation: Your Name, You. (2009). "T.B.D." <i>Conf.</i>. 1(1).
