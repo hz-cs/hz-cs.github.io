@@ -1,6 +1,6 @@
 ---
 title: 'C++ returns multiple values'
-date: 2199-01-01
+date: 2021-01-05
 permalink: /posts/2021/01/blog-post-2/
 tags:
   - Coding
@@ -58,7 +58,7 @@ int main()
 } 
 
 
- Output:
+<strong>Output</strong>:
 
 Enter two numbers: 
 5 8
@@ -108,7 +108,7 @@ int main()
 	return 0; 
 } 
 
- Output:
+<strong>Output</strong>:
 
 Enter two numbers: 
 5 8
@@ -154,8 +154,7 @@ int main()
 	return 0; 
 } 
 
-
- Output:
+<strong>Output</strong>:
 
 Enter two numbers: 
 5 8
@@ -198,7 +197,7 @@ int main()
 	return 0; 
 } 
 
- Output:
+<strong>Output</strong>:
 
 Enter two numbers: 
 5 8
@@ -249,7 +248,7 @@ int main()
 } 
 
 
- Output:
+<strong>Output</strong>:
 
 Enter two numbers: 
 5 8
@@ -288,7 +287,7 @@ int main()
 	return 0; 
 } 
 
- Output:
+<strong>Output</strong>:
 
 The greater number is 8 and the smaller number is 5
 
@@ -306,16 +305,16 @@ The following code snippet shows the way to return multiple values from a functi
 using namespace std;
 
 auto foo() {
-  struct retVals {        // Declare a local structure 
-    int i1, i2;
-    string str;
+	struct retVals {        // Declare a local structure 
+	int i1, i2;
+	string str;
   };
-  return retVals {10, 20, "Hi"}; // Return the local structure
+	return retVals {10, 20, "Hi"}; // Return the local structure
 }
 
 int main() {
-  auto [value1, value2, value3] = foo(); // structured binding declaration
-  cout << value1 << ", " << value2 << ", " << value3 << endl;
+	auto [value1, value2, value3] = foo(); // structured binding declaration
+	cout << value1 << ", " << value2 << ", " << value3 << endl;
 }
 
 Note the structured binding syntax on line 131313; there is no need to instantiate output values before calling the function. The datatypes are determined automatically.
@@ -329,13 +328,13 @@ using namespace std;
 
 tuple<int, float, string> foo()
 {
-  return {128, 3.142, "Hello"};
+	return {128, 3.142, "Hello"};
 }
 
 int main()
 {
-  auto [value1, value2, value3] = foo();
-  cout << value1 << ", " << value2 << ", " << value3 << endl;
+	auto [value1, value2, value3] = foo();
+	cout << value1 << ", " << value2 << ", " << value3 << endl;
 }
 
 
